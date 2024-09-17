@@ -17,7 +17,7 @@ services:
 
   spring-app:
     build:
-      context: D:/projet-web/ebanking-digital-spring-boot-apps
+      context: ./digital__ebanking_back
       dockerfile: Dockerfile
     container_name: spring-app
     depends_on:
@@ -33,7 +33,7 @@ services:
 
   angular-app:
     build:
-      context: D:/projet-web/digital-ebank
+      context: ./digital__ebanking_front
       dockerfile: Dockerfile
     container_name: angular-app
     ports:
